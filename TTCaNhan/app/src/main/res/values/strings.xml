@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">TTCaNhan</string>
+    <string name="ho_ten">Họ tên: </string>
+    <string name="phone">Số điện thoại: </string>
+    <string name="IDD">+</string>
+    <string name="CCC">93 </string>
+    <string name="gioi_tinh">Giới tính: </string>
+    <string name="gioi_tinh_nam">Nam</string>
+    <string name="trinh_do">Trình độ: </string>
 </resources>
