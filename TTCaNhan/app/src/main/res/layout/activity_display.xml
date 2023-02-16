@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".DisplayActivity"
     android:orientation="vertical">
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,14 +16,12 @@
             android:layout_height="wrap_content"
             android:text="@string/ho_ten"
             android:textSize="25sp"/>
-        <EditText
-            android:id="@+id/editText_Name"
+        <TextView
+            android:id="@+id/textView_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:inputType="text"/>
+            android:textSize="25sp"/>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,15 +47,12 @@
             android:text="@string/CCC"
             android:textSize="25sp"/>
 
-        <EditText
-            android:id="@+id/editText_PhoneNumber"
-            android:layout_width="0dp"
+        <TextView
+            android:id="@+id/textView_phone"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:inputType="phone"
             android:textSize="25sp"/>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -69,14 +63,12 @@
             android:layout_height="wrap_content"
             android:text="@string/gioi_tinh"
             android:textSize="25sp"/>
-        <com.google.android.material.switchmaterial.SwitchMaterial
-            android:id="@+id/switch_Sex"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView_sex"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/gioi_tinh_nam"
             android:textSize="25sp"/>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -87,12 +79,12 @@
             android:layout_height="wrap_content"
             android:text="@string/trinh_do"
             android:textSize="25sp"/>
-        <Spinner
-            android:id="@+id/spinner_trinhdo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textView_trinhdo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -105,17 +97,10 @@
             android:textSize="25sp"
             />
         <TextView
-            android:id="@+id/seekBar_currentValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="25sp"
-            android:text="50"/>
-        <SeekBar
-            android:id="@+id/seekBar_Tuoi"
+            android:id="@+id/textView_tuoi"
             android:layout_width="match_parent"
-            android:layout_height="34dp"
-            android:max="100"
-            android:progress="50"/>
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -127,13 +112,12 @@
             android:layout_height="wrap_content"
             android:text="@string/the_thao"
             android:textSize="25sp"/>
-        <CheckBox
-            android:id="@+id/checkbox_thethao"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/textView_thethao"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
+            android:textSize="25sp"/>
     </LinearLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -144,55 +128,18 @@
             android:layout_height="wrap_content"
             android:text="@string/am_nhac"
             android:textSize="25sp"/>
-        <RadioGroup
-            android:id="@+id/radioGroup_amnhac"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                android:id="@+id/radioButton_rock"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/am_nhac_option_rock"
-                android:textSize="25sp"/>
-
-            <RadioButton
-                android:id="@+id/radioButton_rap"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/am_nhac_option_rap"
-                android:textSize="25sp"/>
-            <RadioButton
-                android:id="@+id/radioButton_pob"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/am_nhac_option_pob"
-                android:textSize="25sp"/>
-        </RadioGroup>
-
+        <TextView
+            android:id="@+id/textView_amnhac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"/>
     </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button_return"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
-        <Button
-            android:id="@+id/button_submit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/submit"
-            android:textSize="25sp"
-            android:layout_weight="1"
-            android:layout_margin="10dp"/>
-
-        <Button
-            android:id="@+id/button_cancel"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/cancel"
-            android:textSize="25sp"
-            android:layout_weight="1"
-            android:layout_margin="10dp"/>
-    </LinearLayout>
+        android:text="Return"
+        android:textSize="25sp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"/>
 </LinearLayout>

@@ -7,4 +7,17 @@
     <string name="gioi_tinh">Giới tính: </string>
     <string name="gioi_tinh_nam">Nam</string>
     <string name="trinh_do">Trình độ: </string>
+    <string-array name="list_trinhdo">
+        <item>Đại học</item>
+        <item>Cao đẳng</item>
+        <item>Chuyên môn</item>
+    </string-array>
+    <string name="tuoi">Tuổi: </string>
+    <string name="the_thao">Thể thao: </string>
+    <string name="am_nhac">Thể loại âm nhạc: </string>
+    <string name="am_nhac_option_rock">Rock</string>
+    <string name="am_nhac_option_rap">Rap</string>
+    <string name="am_nhac_option_pob">Pob</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
 </resources>
