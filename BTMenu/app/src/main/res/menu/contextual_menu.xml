@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/contexttual_menu_share"
+        android:icon="@drawable/ic_share"
+        android:title="share"
+        android:iconTint="@color/white"
+        />
+    <item android:id="@+id/contexttual_menu_delete"
+        android:icon="@drawable/ic_delete"
+        android:title="delete"
+        android:iconTint="@color/white"
+        />
+</menu>
